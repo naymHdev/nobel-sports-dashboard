@@ -1,8 +1,13 @@
+import EarningOverView from "@/components/modules/earning-over-view";
 
-const EarningOverView = () => {
+const EarningOverViewPage = () => {
   return (
-    <>EarningOverView</>
-);
+    <>
+      <div>
+        <EarningOverView />
+      </div>
+    </>
+  );
 };
 
-export default EarningOverView;
+export default EarningOverViewPage;

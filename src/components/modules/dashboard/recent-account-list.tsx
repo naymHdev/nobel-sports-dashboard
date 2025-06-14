@@ -70,17 +70,17 @@ const RecentAccountList = () => {
       <table className="min-w-full table-auto text-left text-sm">
         <thead className="bg-green-100 text-gray-700">
           <tr>
-            <th className="px-4 py-2">Full Name</th>
-            <th className="px-4 py-2">Subscription</th>
-            <th className="px-4 py-2">Matches Joined</th>
-            <th className="px-4 py-2">Status</th>
-            <th className="px-4 py-2">Player</th>
+            <th className="px-4 py-2 text-center">Full Name</th>
+            <th className="px-4 py-2 text-center">Subscription</th>
+            <th className="px-4 py-2 text-center">Matches Joined</th>
+            <th className="px-4 py-2 text-center">Status</th>
+            <th className="px-4 py-2 text-center">Player</th>
           </tr>
         </thead>
         <tbody>
           {data.map((user, index) => (
             <tr key={index} className="border-b">
-              <td className="flex items-center gap-2 px-4 py-4">
+              <td className="flex items-center justify-center gap-2 px-4 py-4">
                 <Image
                   src={pImg}
                   alt={user.name}
@@ -90,17 +90,17 @@ const RecentAccountList = () => {
                 />
                 {user.name}
               </td>
-              <td className="px-4 py-2">{user.subscription}</td>
-              <td className="px-4 py-2">{user.matches}</td>
+              <td className="px-4 py-2 text-center">{user.subscription}</td>
+              <td className="px-4 py-2 text-center">{user.matches}</td>
               <td
                 className={cn(
-                  "px-4 py-2 font-medium",
+                  "px-4 py-2 text-center font-medium",
                   user.status === "Active" ? "text-blue-600" : "text-red-600"
                 )}
               >
                 {user.status}
               </td>
-              <td className="px-4 py-2">{user.role}</td>
+              <td className="px-4 py-2 text-center">{user.role}</td>
             </tr>
           ))}
         </tbody>
