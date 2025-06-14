@@ -1,8 +1,13 @@
+import SupportMessage from "@/components/modules/support-message";
 
 const SupportMessagePage = () => {
   return (
-    <>SupportMessagePage</>
-);
+    <>
+      <div>
+        <SupportMessage />
+      </div>
+    </>
+  );
 };
 
 export default SupportMessagePage;

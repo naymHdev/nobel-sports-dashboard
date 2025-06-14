@@ -20,6 +20,7 @@ import {
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 import { IoMdLogOut } from "react-icons/io";
+import { usePathname } from "next/navigation";
 
 export function NavMain({
   items,
@@ -35,6 +36,8 @@ export function NavMain({
     }[];
   }[];
 }) {
+  const pathname = usePathname();
+  console.log(pathname);
   return (
     <SidebarGroup>
       <SidebarGroupLabel>Menu</SidebarGroupLabel>
@@ -42,7 +45,14 @@ export function NavMain({
         {items.map((item) => (
           <Collapsible key={item.title} asChild defaultOpen={item.isActive}>
             <SidebarMenuItem>
-              <SidebarMenuButton asChild tooltip={item.title}>
+              <SidebarMenuButton
+                asChild
+                tooltip={item.title}
+                className={` py-5 ${
+                  pathname === item.url &&
+                  "bg-ns-primary text-ns-white hover:bg-ns-primary hover:text-ns-white py-5"
+                }`}
+              >
                 <Link href={item.url}>
                   <item.icon />
                   <span>{item.title}</span>
