@@ -52,12 +52,14 @@ export function NavUser() {
               <span className="truncate text-xs">hayton@gmail.com</span>
             </div>
           </Link>
-          <div className="relative">
-            <Bell className="w-8 h-8 text-ns-neutral-dark" />
-            <div className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-[#EFFCF1] text-ns-primary flex items-center justify-center text-xs">
-              8
+          <Link href={"/notifications"}>
+            <div className="relative">
+              <Bell className="w-6 h-6 text-ns-neutral-dark" />
+              <div className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-[#EFFCF1] text-ns-primary flex items-center justify-center text-xs">
+                8
+              </div>
             </div>
-          </div>
+          </Link>
         </SidebarMenuButton>
       </SidebarMenuItem>
     </SidebarMenu>
