@@ -83,7 +83,7 @@ const TeamManagerTab = () => {
                 ))}
               </ul>
             </CardContent>
-            <CardFooter className="mt-6 flex flex-wrap items-center gap-3">
+            <CardFooter className="mt-6 flex flex-wrap md:flex-nowrap items-center gap-3">
               <NSButton className=" text-[#0EB1FE] bg-[#eff4f7] rounded-lg w-full flex items-center justify-center gap-1">
                 <CiEdit />
                 Edit Price
