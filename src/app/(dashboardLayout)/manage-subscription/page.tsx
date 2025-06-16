@@ -1,8 +1,13 @@
+import SubscriptionsPlan from "@/components/modules/subscriptions-plan.tsx";
 
 const ManageSubscriptionPage = () => {
   return (
-    <>ManageSubscriptionPage</>
-);
+    <>
+      <div>
+        <SubscriptionsPlan />
+      </div>
+    </>
+  );
 };
 
 export default ManageSubscriptionPage;

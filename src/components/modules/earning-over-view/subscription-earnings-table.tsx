@@ -29,7 +29,7 @@ const SubscriptionEarnings = () => {
       <div className="overflow-hidden">
         <Table>
           <TableHeader>
-            <TableRow className=" bg-ns-primary hover:bg-green-600">
+            <TableRow className=" bg-ns-primary hover:bg-green-600 ">
               <TableHead className="text-white py-4 font-semibold text-center">
                 Serial
               </TableHead>
@@ -70,7 +70,7 @@ const SubscriptionEarnings = () => {
                   <TableCell className="font-medium text-center">
                     {user.name}
                   </TableCell>
-                  <TableCell className="font-medium text-center">
+                  <TableCell className="font-medium text-center ">
                     {user.accountType}
                   </TableCell>
                   <TableCell className="font-medium text-center">
@@ -81,9 +81,6 @@ const SubscriptionEarnings = () => {
                   </TableCell>
                   <TableCell className="font-medium text-center">
                     {user.purchaseDate}
-                  </TableCell>
-                  <TableCell className="font-medium text-center">
-                    {user.transActions}
                   </TableCell>
                 </TableRow>
               ))}

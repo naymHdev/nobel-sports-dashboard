@@ -30,7 +30,7 @@ const EarningCommissionTable = () => {
       <div className="overflow-hidden">
         <Table>
           <TableHeader>
-            <TableRow className="bg-green-600 hover:bg-green-600">
+            <TableRow className=" bg-ns-primary hover:bg-green-600">
               <TableHead className="text-white font-semibold text-center">
                 Serial
               </TableHead>
