@@ -45,17 +45,17 @@ const PrivacyPolicyEditor = () => {
     },
   });
 
-  const addImage = () => {
-    const url = window.prompt("Enter image URL");
-    if (url) editor?.chain().focus().setImage({ src: url }).run();
-  };
+  // const addImage = () => {
+  //   const url = window.prompt("Enter image URL");
+  //   if (url) editor?.chain().focus().setImage({ src: url }).run();
+  // };
 
   return (
     <div className="space-y-4">
       <h2 className="text-2xl font-semibold">Privacy Policy Editor</h2>
 
       {/* Toolbar */}
-      <div className="flex flex-wrap gap-2 border rounded-md p-2 bg-white shadow-sm">
+      <div className="flex flex-wrap gap-2 border rounded-md p-2 bg-white">
         <Button
           variant="outline"
           size="icon"
@@ -112,9 +112,9 @@ const PrivacyPolicyEditor = () => {
         >
           <AlignRight size={16} />
         </Button>
-        <Button variant="outline" size="icon" onClick={addImage}>
+        {/* <Button variant="outline" size="icon" onClick={addImage}>
           <ImageIcon size={16} />
-        </Button>
+        </Button> */}
         <Button
           variant="outline"
           size="icon"

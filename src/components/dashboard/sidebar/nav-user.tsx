@@ -12,9 +12,9 @@ import {
 import { usePathname, useRouter } from "next/navigation";
 import dbProfile from "../../../assets/images/db-profile.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export function NavUser() {
-
   const router = useRouter();
   const pathname = usePathname();
 
@@ -34,20 +34,24 @@ export function NavUser() {
           size="lg"
           className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
         >
-          <Avatar className="h-10 w-10 rounded-lg">
-            <Image
-              src={dbProfile}
-              alt="db-profile"
-              width={40}
-              height={40}
-              className=" rounded-full"
-            />
-            <AvatarFallback className="rounded-lg">Admin</AvatarFallback>
-          </Avatar>
-          <div className="grid flex-1 text-left text-sm leading-tight">
-            <span className="truncate font-semibold">Hayton</span>
-            <span className="truncate text-xs">hayton@gmail.com</span>
-          </div>
+          <Link href={"/profile"}>
+            <Avatar className="h-10 w-10 rounded-lg">
+              <Image
+                src={dbProfile}
+                alt="db-profile"
+                width={40}
+                height={40}
+                className=" rounded-full"
+              />
+              <AvatarFallback className="rounded-lg">Admin</AvatarFallback>
+            </Avatar>
+          </Link>
+          <Link href={"/profile"}>
+            <div className="grid flex-1 text-left text-sm leading-tight">
+              <span className="truncate font-semibold">Hayton</span>
+              <span className="truncate text-xs">hayton@gmail.com</span>
+            </div>
+          </Link>
           <div className="relative">
             <Bell className="w-8 h-8 text-ns-neutral-dark" />
             <div className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-[#EFFCF1] text-ns-primary flex items-center justify-center text-xs">

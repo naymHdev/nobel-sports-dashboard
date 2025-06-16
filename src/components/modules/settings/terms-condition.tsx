@@ -45,10 +45,10 @@ const TermsAndConditionEditor = () => {
     },
   });
 
-  const addImage = () => {
-    const url = window.prompt("Enter image URL");
-    if (url) editor?.chain().focus().setImage({ src: url }).run();
-  };
+  // const addImage = () => {
+  //   const url = window.prompt("Enter image URL");
+  //   if (url) editor?.chain().focus().setImage({ src: url }).run();
+  // };
 
   return (
     <div className="space-y-4">
@@ -112,9 +112,9 @@ const TermsAndConditionEditor = () => {
         >
           <AlignRight size={16} />
         </Button>
-        <Button variant="outline" size="icon" onClick={addImage}>
+        {/* <Button variant="outline" size="icon" onClick={addImage}>
           <ImageIcon size={16} />
-        </Button>
+        </Button> */}
         <Button
           variant="outline"
           size="icon"
