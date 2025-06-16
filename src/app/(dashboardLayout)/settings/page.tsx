@@ -1,8 +1,13 @@
+import SettingsSections from "@/components/modules/settings";
 
 const SettingsPage = () => {
   return (
-    <>SettingsPage</>
-);
+    <>
+      <div>
+        <SettingsSections />
+      </div>
+    </>
+  );
 };
 
 export default SettingsPage;
