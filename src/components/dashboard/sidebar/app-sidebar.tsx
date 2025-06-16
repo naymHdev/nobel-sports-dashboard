@@ -39,11 +39,6 @@ const data = {
       icon: UsersRound,
     },
     {
-      title: "Match and Venue Management",
-      url: "/match-venue-management",
-      icon: CalendarRange,
-    },
-    {
       title: "Earning Overview",
       url: "/earning-overview",
       icon: BarChart3,
