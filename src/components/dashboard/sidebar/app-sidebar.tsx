@@ -6,6 +6,7 @@ import {
   CalendarRange,
   Crown,
   MessageSquareMore,
+  NotebookPen,
   Settings,
   SquareTerminal,
   UsersRound,
@@ -53,6 +54,11 @@ const data = {
       title: "Manage Subscription",
       url: "/manage-subscription",
       icon: Crown,
+    },
+    {
+      title: "Manage Banner",
+      url: "/banner-manage",
+      icon: NotebookPen,
     },
     {
       title: "Settings",
