@@ -3,8 +3,8 @@
 import * as React from "react";
 import {
   BarChart3,
-  CalendarRange,
   Crown,
+  Megaphone,
   MessageSquareMore,
   NotebookPen,
   Settings,
@@ -59,6 +59,11 @@ const data = {
       title: "Manage Banner",
       url: "/banner-manage",
       icon: NotebookPen,
+    },
+    {
+      title: "Add Advertisement",
+      url: "/advertisement",
+      icon: Megaphone,
     },
     {
       title: "Settings",
